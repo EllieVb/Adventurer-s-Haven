@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .flex_center {
+        @apply flex justify-center items-center
+    }
+
+    .flex_start {
+        @apply flex justify-start items-center
+
+    }
+
+    .flex_between {
+        @apply flex justify-between items-center
+    }
+
+    .flex_around {
+        @apply flex justify-around items-center
+
+    }
+
+    .box{
+        @apply p-5 bg-box rounded-3xl drop-shadow-xl cursor-pointer
+    }
+
+    .underDarkFinal {
+        @apply bg-underDark bg-cover bg-no-repeat bg-center rounded-2xl
+    }
+
+    .ml_0 {
+        margin-left: 0 !important;
+
+    }
+
+    .hero_section {
+        height: 500px;
+        width: 100%;
+        background-image: url(../src/images/banner.svg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
