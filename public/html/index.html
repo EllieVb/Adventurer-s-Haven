@@ -1,0 +1,1686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Elnaz Beyhaghi">
+    <link rel="shortcut icon" href="../src/favicon/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../css/output.css">
+    <title>Adventurer`s Haven</title>
+</head>
+
+<body class="bg-primary">
+    <section class="container px-1 lg:px-0">
+        <!-- Nav Bar Start -->
+        <nav class="bg-secondary border-b-2 border-b-button">
+            <div class="max-w-full flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="../html/index.html" class="flex_center space-x-3 rtl:space-x-reverse">
+                    <img src="../src/images/logo.svg" class="h-8 drop-shadow-lg" alt="Adventurer`s Have Logo" />
+                    <span class="leading-8 font-semibold text-text_primary text-base lg:text-2xl">Adventurer`s
+                        Haven</span>
+                </a>
+                <div class="flex md:order-2 space-x-3 drop-shadow-lg md:space-x-0 rtl:space-x-reverse">
+                    <button type="button"
+                        class="bg-button rounded-full px-5 py-2 hover:bg-button_hover text-secondary">Explore</button>
+                    <button data-collapse-toggle="navbar-cta" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-secondary bg-button rounded-full md:hidden hover:bg-button_hover focus:outline-none focus:ring-2 focus:ring-secondary"
+                        aria-controls="navbar-cta" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                    <ul
+                        class="flex flex-col font-medium p-4 md:p-0 mt-4 rounded-lg bg-secondary md:space-x-5 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-secondary">
+                        <li>
+                            <a href="./index.html"
+                                class="block py-2 px-3 md:p-0 text-text_primary rounded hover:bg-primary md:hover:bg-transparent md:hover:text-button">Home</a>
+                        </li>
+                        <li>
+                            <a href="./dndoverview.html"
+                                class="block py-2 px-3 md:p-0 text-text_primary rounded hover:bg-primary md:hover:bg-transparent md:hover:text-button">D&D
+                                Overview</a>
+                        </li>
+                        <li>
+                            <a href="./gallery.html"
+                                class="block py-2 px-3 md:p-0 text-text_primary rounded hover:bg-primary md:hover:bg-transparent md:hover:text-button">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="./profilepage.html"
+                                class="block py-2 px-3 md:p-0 text-text_primary rounded hover:bg-primary md:hover:bg-transparent md:hover:text-button">Profile</a>
+                        </li>
+                        <li>
+                            <a href="./login.html"
+                                class="block py-2 px-3 md:p-0 text-text_primary rounded hover:bg-primary md:hover:bg-transparent md:hover:text-button">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Nav Bar End -->
+        <!-- Hero Section Start-->
+        <section class="mb-20">
+            <div class="hero_section flex flex-col items-start justify-around">
+                <div class="">
+                    <h1
+                        class="ml-0 text-primary text-4xl leading-[62px] font-extrabold tracking-tight md:text-5xl md:ml-5 lg:text-6xl">
+                        Step into the realm of epic D&D escapades. Educate. Invent. Participate.</h1>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="w-full">
+                    <form class="flex items-center max-w-lg mx-auto">
+                        <label for="voice-search" class="sr-only">Search</label>
+                        <div class="relative w-full">
+                            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                                <img class="w-4 h-4" src="../src/icons/Icon_dragon.svg" alt="dragon">
+                            </div>
+                            <input type="text" id="voice-search"
+                                class="bg-primary border border-secondary text-text_primary text-sm rounded-l-full focus:ring-button focus:border-button_hover block w-full ps-10 p-2.5"
+                                placeholder="Search in D&D world" required />
+                            <button type="button" class="absolute inset-y-0 end-0 flex items-center pe-3">
+                                <svg class="w-4 h-4 text-text_primary hover:text-button_hover " aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 7v3a5.006 5.006 0 0 1-5 5H6a5.006 5.006 0 0 1-5-5V7m7 9v3m-3 0h6M7 1h2a3 3 0 0 1 3 3v5a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V4a3 3 0 0 1 3-3Z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <button type="submit"
+                            class="inline-flex items-center py-2.5 px-3 ms-2 text-sm font-medium text-primary bg-button rounded-r-full border border-button hover:bg-button_hover focus:ring-4 focus:outline-none focus:ring-button">
+                            <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                            Search
+                        </button>
+                    </form>
+                </div>
+                <!-- Search Bar -->
+            </div>
+        </section>
+        <!-- Hero Section Start-->
+        <!-- Sections Section Start -->
+        <section>
+            <div class="leading-8 font-semibold text-2xl mb-10">
+                <h3>Sections</h3>
+            </div>
+            <div class="flex_center flex-wrap space-y-5">
+                <div class="flex_around w-full space-x-10">
+                    <div class="flex_center sm:flex_start  space-x-5 cursor-pointer box w-1/4 h-fit">
+                        <img src="../src/icons/Icon_dragon.svg" class="  " alt="">
+                        <span class=" text-text_primary hidden sm:block md:block lg:block">Core Rules</span>
+                    </div>
+                    <div class="flex_center sm:flex_start  space-x-5 cursor-pointer box w-1/4 h-fit">
+                        <img src="../src/icons/Icon_hat_wizard.svg" class="  " alt="">
+                        <span class=" text-text_primary hidden sm:block md:block lg:block">Character Creation</span>
+                    </div>
+                    <div class="flex_center sm:flex_start  space-x-5 cursor-pointer box w-1/4 h-fit">
+                        <img src="../src/icons/Icon_khanda.svg" class="  " alt="">
+                        <span class=" text-text_primary hidden sm:block md:block lg:block">Gameplay Tips</span>
+                    </div>
+                    <div class="flex_center sm:flex_start  space-x-5 cursor-pointer box w-1/4 h-fit">
+                        <img src="../src/icons/Icon_shield.svg" class="  " alt="">
+                        <span class=" text-text_primary hidden sm:block md:block lg:block">Character Art</span>
+                    </div>
+                </div>
+                <div class="flex_around w-full space-x-10">
+                    <div class="flex_center sm:flex_start  space-x-5 cursor-pointer box w-1/4 h-fit">
+                        <img src="../src/icons/Icon_map_location_dot.svg" class="  " alt="">
+                        <span class=" text-text_primary hidden sm:block md:block lg:block">Maps</span>
+                    </div>
+                    <div class="flex_center sm:flex_start  space-x-5 cursor-pointer box w-1/4 h-fit">
+                        <img src="../src/icons/Icon_paintbrush.svg" class="  " alt="">
+                        <span class=" text-text_primary hidden sm:block md:block lg:block">Fan Creations</span>
+                    </div>
+                    <div class="flex_center sm:flex_start  space-x-5 cursor-pointer box w-1/4 h-fit">
+                        <img src="../src/icons/Icon_scroll.svg" class="  " alt="">
+                        <span class=" text-text_primary hidden sm:block md:block lg:block">Character Sheets</span>
+                    </div>
+                    <div class="flex_center sm:flex_start  space-x-5 cursor-pointer box w-1/4 h-fit">
+                        <img src="../src/icons/Icon_book_open.svg" class="  " alt="">
+                        <span class=" text-text_primary hidden sm:block md:block lg:block">Rulebooks</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sections Section End -->
+        <!-- Guides & Community Section Start -->
+        <section>
+            <div class="leading-8 font-semibold text-2xl my-10">
+                <h3>Guides & Community</h3>
+            </div>
+            <!-- Info Cards Start -->
+             <div class="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center ">
+                <div class="flex flex-col space-y-8 mb-8 lg:mb-0 ">
+                    <div class="w-76 h-72 bg-box rounded-3xl drop-shadow-xl cursor-pointer"
+                        data-modal-target="adventure-modal" data-modal-toggle="adventure-modal">
+                        <div class="flex_center flex-wrap">
+                            <div class="flex_between w-full p-5">
+                                <div class="w-16 h-16 rounded-full"><img src="../src/images/adventure.svg" alt=""></div>
+                                <div class="flex_center space-x-2">
+                                    <img src="../src/icons/Icon_dungeon.svg" alt="">
+                                    <img src="../src/icons/Icon_dice_d20.svg" alt="">
+                                    <img src="../src/icons/Icon_hat_wizard.svg" alt="">
+                                    <img src="../src/icons/Icon_khanda.svg" alt="">
+                                    <img src="../src/icons/Icon_shield.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="w-full px-5">
+                                <div class="text-lg leading-6 font-semibold">
+                                    <h4>Adventure</h4>
+                                </div>
+                                <div class="leading-[22px] font-normal">
+                                    <h5>explored Magic Realms</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="w-full h-1 bg-primary text-primary my-5">
+
+                        <div class="px-5 leading-[22px] text-balance line-clamp-3">
+                            <h6>“Spellbinding adventures await at every turn. Unleash your magic!”</h6>
+                        </div>
+                    </div>
+
+                    <div class="w-76 h-93 bg-box rounded-3xl drop-shadow-xl cursor-pointer"
+                        data-modal-target="rouge-modal" data-modal-toggle="rouge-modal">
+                        <div class="flex_center flex-wrap">
+                            <div class="flex_between w-full p-5">
+                                <div class="w-16 h-16 rounded-full"><img src="../src/images/rogue.svg" alt=""></div>
+                                <div class="flex_center space-x-2">
+                                    <img src="../src/icons/Icon_baseball_bat_ball.svg" alt="">
+                                    <img src="../src/icons/Icon_wand_magic_sparkles.svg" alt="">
+                                    <img src="../src/icons/Icon_star.svg" alt="">
+                                    <img src="../src/icons/Icon_star.svg" alt="">
+                                    <img src="../src/icons/Icon_scroll.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="w-full px-5">
+                                <div class="text-lg leading-6 font-semibold">
+                                    <h4>Rogue</h4>
+                                </div>
+                                <div class="leading-[22px] font-normal">
+                                    <h5>Stealth tactics</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="w-full h-1 bg-primary text-primary my-5">
+
+                        <div class="px-5 leading-[22px] text-balance line-clamp-3">
+                            <h6>“Navigate shadows and strike with precision.”</h6>
+                        </div>
+                        <div class="flex_start space-x-2 p-5">
+                            <div class="w-16 h-16 rounded-full"><img src="../src/images/rogue(1).svg" alt=""></div>
+                            <div class="w-16 h-16 rounded-full"><img src="../src/images/rogue(2).svg" alt=""></div>
+                            <div class="w-16 h-16 rounded-full"><img src="../src/images/rogue(3).svg" alt=""></div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-8 mb-8 lg:mb-0 ">
+                    <div class="w-76 h-93 bg-box rounded-3xl drop-shadow-xl cursor-pointer"
+                        data-modal-target="bahamut-modal" data-modal-toggle="bahamut-modal">
+                        <div class="flex_center flex-wrap">
+                            <div class="flex_between w-full p-5">
+                                <div class="w-16 h-16 rounded-full"><img src="../src/images/bahamut.svg" alt=""></div>
+                                <div class="flex_center space-x-2">
+                                    <img src="../src/icons/Icon_baseball_bat_ball.svg" alt="">
+                                    <img src="../src/icons/Icon_hat_wizard.svg" alt="">
+                                    <img src="../src/icons/Icon_spell_check.svg" alt="">
+                                    <img src="../src/icons/Icon_wand_magic_sparkles.svg" alt="">
+                                    <img src="../src/icons/Icon_star.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="w-full px-5">
+                                <div class="text-lg leading-6 font-semibold">
+                                    <h4>Bahamut</h4>
+                                </div>
+                                <div class="leading-[22px] font-normal">
+                                    <h5>discovered Dragon's Lair</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="w-full h-1 bg-primary text-primary my-5">
+
+                        <div class="px-5 leading-[22px] text-balance line-clamp-3">
+                            <h6>“Beware the dragon's fiery breath and treasure hoard. A true test of bravery!”</h6>
+                        </div>
+                        <div class="flex_start space-x-2 p-5">
+                            <div class="w-16 h-16 rounded-full"><img src="../src/images/bahamut(1).svg" alt=""></div>
+                            <div class="w-16 h-16 rounded-full"><img src="../src/images/bahamut(2).svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="w-76 h-72 bg-box rounded-3xl drop-shadow-xl cursor-pointer"
+                        data-modal-target="bard-modal" data-modal-toggle="bard-modal">
+                        <div class="flex_center flex-wrap">
+                            <div class="flex_between w-full p-5">
+                                <div class="w-16 h-16 rounded-full"><img src="../src/images/bard.svg" alt=""></div>
+                                <div class="flex_center space-x-2">
+                                    <img src="../src/icons/Icon_star.svg" alt="">
+                                    <img src="../src/icons/Icon_hammer.svg" alt="">
+                                    <img src="../src/icons/Icon_peace.svg" alt="">
+                                    <img src="../src/icons/Icon_skull.svg" alt="">
+                                    <img src="../src/icons/Icon_star.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="w-full px-5">
+                                <div class="text-lg leading-6 font-semibold">
+                                    <h4>Bard</h4>
+                                </div>
+                                <div class="leading-[22px] font-normal">
+                                    <h5>Inspire allies</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="w-full h-1 bg-primary text-primary my-5">
+
+                        <div class="px-5 leading-[22px] text-balance line-clamp-3">
+                            <h6>“Elevate comrades with stirring melodies and captivating tales.”</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-8 mb-8 sm:mb-0 ">
+                    <div class="w-76 h-72 bg-box rounded-3xl drop-shadow-xl cursor-pointer"
+                        data-modal-target="delve-modal" data-modal-toggle="delve-modal">
+                        <div class="flex_center flex-wrap">
+                            <div class="flex_between w-full p-5">
+                                <div class="w-16 h-16 rounded-full"><img src="../src/images/delve-into.svg" alt="">
+                                </div>
+                                <div class="flex_center space-x-2">
+                                    <img src="../src/icons/Icon_dragon.svg" alt="">
+                                    <img src="../src/icons/Icon_gem.svg" alt="">
+                                    <img src="../src/icons/Icon_star.svg" alt="">
+                                    <img src="../src/icons/Icon_star.svg" alt="">
+                                    <img src="../src/icons/Icon_khanda.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="w-full px-5">
+                                <div class="text-lg leading-6 font-semibold">
+                                    <h4>Delve into</h4>
+                                </div>
+                                <div class="leading-[22px] font-normal">
+                                    <h5>Explore D&D lore</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="w-full h-1 bg-primary text-primary my-5">
+
+                        <div class="px-5 leading-[22px] text-balance line-clamp-3">
+                            <h6>“Immersive world-building and epic adventures await.”</h6>
+                        </div>
+                    </div>
+                    <div class="w-76 h-93 bg-box rounded-3xl drop-shadow-xl cursor-pointer"
+                        data-modal-target="barbarian-modal" data-modal-toggle="barbarian-modal">
+                        <div class="flex_center flex-wrap">
+                            <div class="flex_between w-full p-5">
+                                <div class="w-16 h-16 rounded-full"><img src="../src/images/barbarian.svg" alt=""></div>
+                                <div class="flex_center space-x-2">
+                                    <img src="../src/icons/Icon_star.svg" alt="">
+                                    <img src="../src/icons/Icon_mask.svg" alt="">
+                                    <img src="../src/icons/Icon_lock.svg" alt="">
+                                    <img src="../src/icons/Icon_skull_crossbones.svg" alt="">
+                                    <img src="../src/icons/Icon_star.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="w-full px-5">
+                                <div class="text-lg leading-6 font-semibold">
+                                    <h4>Barbarian</h4>
+                                </div>
+                                <div class="leading-[22px] font-normal">
+                                    <h5>Unleash fury</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="w-full h-1 bg-primary text-primary my-5">
+
+                        <div class="px-5 leading-[22px] text-balance line-clamp-3">
+                            <h6>“Embrace raw power and conquer foes with primal strength.”</h6>
+                        </div>
+                        <div class="flex_start space-x-2 p-5">
+                            <div class="w-16 h-16 rounded-full"><img src="../src/images/barbarian(1).svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col space-y-8 ">
+                    <div class="w-76 h-93 bg-box rounded-3xl drop-shadow-xl cursor-pointer"
+                        data-modal-target="wizard-modal" data-modal-toggle="wizard-modal">
+                        <div class="flex_center flex-wrap">
+                            <div class="flex_between w-full p-5">
+                                <div class="w-16 h-16 rounded-full"><img src="../src/images/wizard.svg" alt=""></div>
+                                <div class="flex_center space-x-2">
+                                    <img src="../src/icons/Icon_dragon.svg" alt="">
+                                    <img src="../src/icons/Icon_spell_check.svg" alt="">
+                                    <img src="../src/icons/Icon_khanda.svg" alt="">
+                                    <img src="../src/icons/Icon_shield.svg" alt="">
+                                    <img src="../src/icons/Icon_dungeon.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="w-full px-5">
+                                <div class="text-lg leading-6 font-semibold">
+                                    <h4>Wizard</h4>
+                                </div>
+                                <div class="leading-[22px] font-normal">
+                                    <h5>Learn spellcasting</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="w-full h-1 bg-primary text-primary my-5">
+
+                        <div class="px-5 leading-[22px] text-balance line-clamp-3">
+                            <h6>“Master the arcane arts and harness powerful magic.”</h6>
+                        </div>
+                        <div class="flex_start space-x-2 p-5">
+                            <div class="w-16 h-16 rounded-full"><img src="../src/images/wizard(1).svg" alt=""></div>
+                            <div class="w-16 h-16 rounded-full"><img src="../src/images/wizard(2).svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="w-76 h-72 bg-box rounded-3xl drop-shadow-xl cursor-pointer"
+                        data-modal-target="cleric-modal" data-modal-toggle="cleric-modal">
+                        <div class="flex_center flex-wrap">
+                            <div class="flex_between w-full p-5">
+                                <div class="w-16 h-16 rounded-full"><img src="../src/images/cleric.svg" alt=""></div>
+                                <div class="flex_center space-x-2">
+                                    <img src="../src/icons/Icon_person.svg" alt="">
+                                    <img src="../src/icons/Icon_star.svg" alt="">
+                                    <img src="../src/icons/Icon_star.svg" alt="">
+                                    <img src="../src/icons/Icon_drum.svg" alt="">
+                                    <img src="../src/icons/Icon_star.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="w-full px-5">
+                                <div class="text-lg leading-6 font-semibold">
+                                    <h4>Cleric</h4>
+                                </div>
+                                <div class="leading-[22px] font-normal">
+                                    <h5>Heal companions</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="w-full h-1 bg-primary text-primary my-5">
+
+                        <div class="px-5 leading-[22px] text-balance line-clamp-3">
+                            <h6>“Channel divine energy to mend wounds and protect the party.”</h6>
+                        </div>
+                    </div>
+                </div>
+             </div>
+            <!-- Info Cards End -->
+             <!-- todo Add More Cards -->
+            <div class="w-full flex_center my-10">
+                <div class="w-48 bg-button px-5 py-2 rounded-full flex_center cursor-pointer hover:bg-button_hover">
+                    <p class="leading-[22px] font-semibold text-primary">Explore more</p>
+                </div>
+            </div>
+            <!-- todo End -->
+        </section>
+        <!-- Guides & Community Section End -->
+        <!-- Footer Section Start -->
+        <footer class="p-4 bg-secondary sm:p-6 border-t-2 border-t-button ">
+            <div class="mx-auto w-full">
+                <div class="md:flex md:justify-between">
+                    <div class="mb-6 md:mb-0">
+                        <a href="./index.html" class="flex items-center">
+                            <img src="../src/images/logo.svg" class="mr-3 h-8 drop-shadow-xl"
+                                alt="Adventurer`s Haven Logo" />
+                            <span
+                                class="self-center text-base font-semibold whitespace-nowrap text-text_primary lg:text-2xl">Adventurer`s
+                                Haven</span>
+                        </a>
+                    </div>
+                    <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources
+                            </h2>
+                            <ul class="text-gray-600 dark:text-gray-400 space-y-4">
+                                <li>
+                                    <a href="https://www.dndbeyond.com/" class="hover:underline cursor-alias"
+                                        target="_blank">D&D Beyond</a>
+                                </li>
+                                <li>
+                                    <a href="https://5e.tools/" class="hover:underline cursor-alias"
+                                        target="_blank">5eTools</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us
+                            </h2>
+                            <ul class="text-gray-600 dark:text-gray-400">
+                                <li class="mb-4">
+                                    <a href="#" class="hover:underline cursor-alias" target="_blank">Github</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline cursor-alias" target="_blank">Discord</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                            <ul class="text-gray-600 dark:text-gray-400">
+                                <li class="mb-4">
+                                    <a href="./privacy-conditions.html" class="hover:underline">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="./privacy-conditions.html" class="hover:underline">Terms &amp;
+                                        Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-6 border-primary sm:mx-auto lg:my-8" />
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <span class="text-sm text-gray-500 sm:text-center">© 2022 <a href="./index.html"
+                            class="hover:underline">Adventurer`s Haven™</a>. All Rights Reserved.
+                    </span>
+                    <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                        <!-- FaceBook -->
+                        <a href="#" class="text-gray-500 hover:text-gray-900 cursor-alias" target="_blank">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/ellie.bey.vb?igsh=ZjlodmVubTRyMzQ4"
+                            class="text-gray-500 hover:text-gray-900 cursor-alias" target="_blank">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <!-- Twitter -->
+                        <a href="#" class="text-gray-500 hover:text-gray-900 cursor-alias" target="_blank">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path
+                                    d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                            </svg>
+                        </a>
+                        <!-- Github -->
+                        <a href="#" class="text-gray-500 hover:text-gray-900 cursor-alias" target="_blank">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/ellie-bv-497b95239"
+                            class="text-gray-500 hover:text-gray-900 cursor-alias" target="_blank">
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                                    clip-rule="evenodd" />
+                                <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Section End -->
+    </section>
+    <!-- ! Adventure-Modal Section Start  -->
+    <div id="adventure-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-auto fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-box rounded-3xl drop-shadow-2xl">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                    <h3 class="text-xl font-semibold text-text_primary">
+                        Adventuring in Dungeons & Dragons: A Journey Through Lore and Worlds
+                    </h3>
+                    <button type="button"
+                        class="text-box bg-button hover:bg-button_hover  rounded-full text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                        data-modal-hide="adventure-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="overflow-auto h-[750px]">
+                    <div class="px-4 w-full h-fit ">
+                        <img class="rounded-3xl mx-auto overflow-hidden drop-shadow-2xl"
+                            src="../src/images/adventure-banner(1).svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h2 class="leading-relaxed font-bold">Adventuring in Dungeons & Dragons: A Journey Through
+                            Lore and Worlds</h2>
+                        <p class="text-base leading-relaxed">
+                            At the heart of every D&D campaign is its lore—an intricate tapestry of history, myth,
+                            and legend that provides depth and context to the game. The lore of D&D is vast,
+                            encompassing multiple settings, each with its own unique cultures, deities, and
+                            histories. Some of the most iconic settings include:
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-[350px]">
+                        <img class=" rounded-3xl h-full mx-auto overflow-hidden drop-shadow-lg"
+                            src="../src/images/adventure-banner.svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">The Lore: A Foundation of Fantasy</h3>
+                        <p class="text-base leading-relaxed">
+                            Dungeons & Dragons (D&D) has been a cornerstone of fantasy role-playing games for nearly
+                            five decades. Its rich lore, diverse worlds, and immersive storytelling have captivated
+                            the imaginations of millions of players worldwide. Whether you're a seasoned Dungeon
+                            Master (DM) or a new adventurer, diving into the expansive universe of D&D offers
+                            endless possibilities for excitement and discovery. In this article, we explore the
+                            essence of adventuring in D&D, from the foundational lore to the dynamic worlds that
+                            form the backdrop of countless epic tales.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">The Forgotten Realms</h5>
+                        <p class="text-base leading-relaxed">
+                            Perhaps the most well-known setting in D&D, the Forgotten Realms is a land of magic and
+                            mystery, filled with ancient ruins, powerful wizards, and legendary heroes. From the
+                            bustling cities of Waterdeep and Baldur's Gate to the untamed wilderness of the Sword
+                            Coast, the Forgotten Realms offers a diverse array of locales for adventurers to
+                            explore.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">Dragonlance</h5>
+                        <p class="text-base leading-relaxed">
+                            Dragonlance is a world where the balance between good and evil is a central theme. The
+                            setting is renowned for its epic conflicts, particularly the War of the Lance, where
+                            heroes and villains clash over the fate of the world. Iconic characters like Raistlin
+                            Majere and Tanis Half-Elven bring the lore to life, making Dragonlance a beloved setting
+                            for many players.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">Eberron</h5>
+                        <p class="text-base leading-relaxed">
+                            Eberron stands out with its unique blend of magic and technology. This setting features
+                            a more industrialized world, with lightning rail trains, sentient constructs known as
+                            Warforged, and a cosmopolitan society that includes all manner of races and classes. The
+                            Last War, a devastating conflict that recently ended, provides a backdrop of intrigue
+                            and tension.
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-fit ">
+                        <img class="rounded-3xl drop-shadow-2xl" src="../src/images/adventure-banner(2).svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">The Worlds: A Canvas for Adventure</h3>
+                        <p class="text-base leading-relaxed">
+                            D&D's worlds are meticulously crafted, offering a rich playground for storytelling and
+                            adventure. Each world is more than just a setting; it's a living, breathing entity with
+                            its own politics, ecosystems, and mysteries. Let's explore what makes adventuring in
+                            these worlds so compelling.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">Exploring the Unknown</h5>
+                        <p class="text-base leading-relaxed">
+                            One of the most thrilling aspects of D&D is the sense of exploration. Whether delving
+                            into the depths of a forgotten dungeon, traversing the enchanted forests of the Feywild,
+                            or sailing the treacherous seas of the Sea of Fallen Stars, adventurers are constantly
+                            uncovering hidden secrets and facing new challenges. The unknown is a powerful lure,
+                            driving players to push the boundaries of the map and their imaginations.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">Dynamic Campaigns</h5>
+                        <p class="text-base leading-relaxed">
+                            In D&D, the story is shaped not only by the DM's narrative but also by the players'
+                            actions. This dynamic storytelling creates a sense of agency and immersion that is hard
+                            to match. Campaigns can range from political intrigue in the courts of Cormyr to epic
+                            battles against ancient dragons. The flexibility of the game allows for endless
+                            variations, ensuring that no two campaigns are ever the same.
+                        </p>
+
+                        <h5 class="leading-relaxed font-bold">Building Bonds</h5>
+                        <p class="text-base leading-relaxed">
+                            Adventuring in D&D is as much about the characters and their relationships as it is
+                            about the plot. The bonds formed between characters—whether through shared hardships,
+                            triumphs, or rivalries—add emotional depth to the game. These connections make the
+                            victories sweeter and the losses more poignant, creating a truly immersive experience.
+                        </p>
+
+                        <h3 class="leading-relaxed font-bold">The Magic of Customization</h3>
+                        <p class="text-base leading-relaxed">
+                            One of the greatest strengths of D&D is the ability to customize every aspect of the
+                            game. From creating unique characters with distinct backgrounds and abilities to
+                            designing entire worlds with their own lore and geography, the game empowers players to
+                            bring their visions to life. This customization fosters creativity and ensures that each
+                            adventure is a personal and memorable journey.
+                        </p>
+
+                        <h5 class="leading-relaxed font-bold">Character Creation</h5>
+                        <p class="text-base leading-relaxed">
+                            Creating a character in D&D is a deeply personal process. Players choose from a variety
+                            of races, classes, and backgrounds, each offering different strengths and abilities.
+                            This customization allows for a diverse range of characters, from a noble paladin sworn
+                            to justice to a cunning rogue with a dark past. The choices made during character
+                            creation shape the story and the gameplay, ensuring that each character is unique.
+                        </p>
+
+                        <h5 class="leading-relaxed font-bold">World Building</h5>
+                        <p class="text-base leading-relaxed">
+                            For DMs, world building is an opportunity to craft a unique setting for their campaign.
+                            Whether drawing inspiration from existing D&D lore or creating an entirely new world,
+                            DMs can design continents, cultures, and conflicts that form the backdrop of the
+                            adventure. This creative process is one of the most rewarding aspects of being a DM, as
+                            it allows for complete artistic freedom.
+                        </p>
+
+                        <h3 class="leading-relaxed font-bold">Conclusion: The Everlasting Adventure</h3>
+                        <p class="text-base leading-relaxed">
+                            Adventuring in D&D is an experience like no other. The combination of rich lore, dynamic
+                            worlds, and endless customization offers a deeply immersive and rewarding experience.
+                            Whether you're uncovering ancient secrets, battling fearsome foes, or forging lasting
+                            bonds with your fellow adventurers, the journey through the worlds of D&D is an
+                            everlasting adventure. So gather your party, sharpen your swords, and prepare to embark
+                            on a quest of a lifetime—because in Dungeons & Dragons, the adventure never truly ends.
+                        </p>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="adventure-modal" type="button"
+                        class="text-box bg-button hover:bg-button_hover font-medium rounded-lg text-sm px-5 py-2.5 text-center">Back
+                        To Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! Adventure-Modal Section End -->
+
+    <!--! Rouge-Modal Section Start -->
+    <div id="rouge-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-auto fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-box rounded-3xl drop-shadow-2xl">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                    <h3 class="text-xl font-semibold text-text_primary">
+                        Rogues in Dungeons & Dragons: Masters of Stealth and Cunning
+                    </h3>
+                    <button type="button"
+                        class="text-box bg-button hover:bg-button_hover  rounded-full text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                        data-modal-hide="rouge-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="overflow-auto h-[750px]">
+                    <div class="px-4 w-full h-fit ">
+                        <img class="rounded-3xl mx-auto overflow-hidden drop-shadow-2xl"
+                            src="../src/images/rouge-banner.svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h2 class="leading-relaxed font-bold">Rogues in Dungeons & Dragons: Masters of Stealth and
+                            Cunning</h2>
+                        <p class="text-base leading-relaxed">
+                            Rogues in Dungeons & Dragons (D&D) are the epitome of stealth, skill, and guile.
+                            Renowned for their agility and quick thinking, they excel in situations that require
+                            finesse and precision. Whether sneaking through shadowy corridors, disarming deadly
+                            traps, or striking from the shadows, rogues bring a unique and invaluable set of skills
+                            to any adventuring party.
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-[350px]">
+                        <img class="rounded-3xl h-full mx-auto overflow-hidden drop-shadow-lg"
+                            src="../src/images/rouge-banner(1).svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">The Path of the Rogue</h3>
+                        <p class="text-base leading-relaxed">
+                            Rogues are versatile and resourceful characters who rely on their wits and agility
+                            rather than brute strength or magical prowess. Their expertise spans a wide range of
+                            abilities, from lockpicking and sleight of hand to acrobatics and deception. This makes
+                            them adept at overcoming obstacles that would stump other classes. The rogue’s life is
+                            one of constant adaptation and cunning, always looking for the advantage and exploiting
+                            the weaknesses of their foes.
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-fit flex_center space-x-1">
+                        <img class="rounded-3xl w-1/2 h-full drop-shadow-2xl"
+                            src="../src/images/rouge-banner(2).svg" alt="">
+                        <img class="rounded-3xl w-1/2 h-full drop-shadow-2xl"
+                            src="../src/images/rouge-banner(3).svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">Signature Abilities</h3>
+                        <h5 class="leading-relaxed font-bold">Sneak Attack</h5>
+                        <p class="text-base leading-relaxed">
+                            One of the rogue’s most iconic abilities is the Sneak Attack. This powerful combat
+                            technique allows rogues to deal extra damage when they catch their enemies off-guard,
+                            making them deadly when they strike from the shadows or flank their opponents. The
+                            ability to consistently land high-damage attacks makes rogues fearsome opponents in
+                            combat, especially when they can position themselves strategically.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">Expertise and Skill Mastery</h5>
+                        <p class="text-base leading-relaxed">
+                            Rogues are known for their unparalleled skill mastery. At various levels, they can
+                            choose skills in which to gain Expertise, doubling their proficiency bonus for checks
+                            using those skills. This makes rogues incredibly effective at tasks such as picking
+                            locks, disarming traps, and stealthily navigating dangerous terrain. Their broad
+                            skillset ensures that they are always prepared for the unexpected.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">Evasion and Uncanny Dodge</h5>
+                        <p class="text-base leading-relaxed">
+                            Rogues are incredibly difficult to pin down or harm. With abilities like Evasion and
+                            Uncanny Dodge, they can avoid or mitigate damage from attacks and spells that would
+                            incapacitate others. Evasion allows them to take no damage on successful Dexterity
+                            saving throws against area effects, while Uncanny Dodge lets them halve the damage from
+                            attacks they can see. These abilities enhance their survivability and make them agile
+                            and elusive targets.
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-fit ">
+                        <img class="rounded-3xl mx-auto overflow-hidden drop-shadow-2xl"
+                            src="../src/images/rouge-banner(4).svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <ul class="list-disc">
+                            <li class="list-none leading-relaxed font-bold">
+                                <h5>Roguish Archetypes</h5>
+                            </li>
+                            <li class="list-none">
+                                <p class="text-base leading-relaxed">Rogues can further specialize by choosing a
+                                    Roguish Archetype, each offering unique abilities and playstyles. Some popular
+                                    archetypes include:</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Thief:</span> Masters
+                                    of agility and speed, thieves excel at climbing, jumping, and using objects in
+                                    combat.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Assassin:</span>
+                                    Experts in infiltration and elimination, assassins are deadly when they strike
+                                    first and from the shadows.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Arcane
+                                        Trickster:</span> Combining magic and subterfuge, arcane tricksters use
+                                    spells to enhance their thievery and combat tactics.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Swashbuckler:</span>
+                                    Bold and charismatic, swashbucklers excel in one-on-one combat and dazzling
+                                    acrobatics.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-4 w-full h-[350px]">
+                        <img class="rounded-3xl h-full mx-auto overflow-hidden drop-shadow-lg"
+                            src="../src/images/rouge-banner(5).svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">The Role of the Rogue in a Party</h3>
+                        <p class="text-base leading-relaxed">
+                            In an adventuring party, rogues often take on the roles of scouts, spies, and damage
+                            dealers. Their ability to move stealthily and avoid detection makes them perfect for
+                            gathering information and setting up ambushes. In combat, they excel at targeting key
+                            enemies and delivering devastating sneak attacks. Outside of combat, their skills in
+                            lockpicking, disarming traps, and sleight of hand are invaluable for navigating
+                            dangerous environments and uncovering hidden treasures
+                        </p>
+                        <h3 class="leading-relaxed font-bold">Conclusion</h3>
+                        <p class="text-base leading-relaxed">
+                            Rogues in D&D are masters of stealth, skill, and strategy. Their versatility and cunning
+                            make them indispensable members of any adventuring party. Whether slipping past guards,
+                            disarming deadly traps, or delivering a lethal blow from the shadows, rogues bring
+                            excitement and intrigue to the game. With their unique blend of agility, intelligence,
+                            and combat prowess, rogues ensure that every adventure is filled with thrilling
+                            challenges and daring exploits.
+                        </p>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="rouge-modal" type="button"
+                        class="text-box bg-button hover:bg-button_hover font-medium rounded-lg text-sm px-5 py-2.5 text-center">Back
+                        To Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! Rouge-Modal Section End -->
+
+    <!--! Bahamut-Modal Section Start -->
+    <div id="bahamut-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-auto fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-box rounded-3xl drop-shadow-2xl">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                    <h3 class="text-xl font-semibold text-text_primary">
+                        Bahamut: The Platinum Dragon of Dungeons & Dragons
+                    </h3>
+                    <button type="button"
+                        class="text-box bg-button hover:bg-button_hover  rounded-full text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                        data-modal-hide="bahamut-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="overflow-auto h-[750px]">
+                    <div class="px-4 w-full h-fit ">
+                        <img class="rounded-3xl mx-auto overflow-hidden drop-shadow-2xl"
+                            src="../src/images/bahamut-banner.svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h2 class="leading-relaxed font-bold">
+                            Bahamut: The Platinum Dragon of Dungeons & Dragons
+                        </h2>
+                        <p class="text-base leading-relaxed">
+                            In the vast and enchanting lore of Dungeons & Dragons (D&D), few figures are as revered
+                            and iconic as Bahamut, the Platinum Dragon. Known as the god of justice, protection, and
+                            nobility, Bahamut stands as a paragon of virtue and a beacon of hope for many
+                            adventurers across the realms.
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-[350px] flex_center space-x-1">
+                        <img class=" w-1/2 rounded-3xl h-fit mx-auto overflow-hidden drop-shadow-lg"
+                            src="../src/images/bahamut-banner(1).svg" alt="">
+                        <img class=" w-1/2 rounded-3xl h-fit mx-auto overflow-hidden drop-shadow-lg"
+                            src="../src/images/bahamut-banner(2).svg" alt="">
+
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">The Platinum Dragon</h3>
+                        <p class="text-base leading-relaxed">
+                            Bahamut is often depicted as a majestic dragon with platinum scales that gleam with
+                            divine light. His form is both awe-inspiring and fearsome, embodying the perfect blend
+                            of power and grace. As the king of all good dragons, he is a symbol of righteousness and
+                            the eternal struggle against evil.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">A Deity of Justice</h5>
+                        <p class="text-base leading-relaxed">
+                            Bahamut's divine portfolio centers on justice, honor, and protection. He is the eternal
+                            foe of evil dragons and a staunch opponent of tyranny and corruption. His followers, who
+                            include paladins, clerics, and other devout individuals, strive to uphold his principles
+                            by fighting injustice and defending the innocent. They often invoke his name when
+                            seeking courage and guidance in their quests.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">The Seven Golden Wyrms</h5>
+                        <p class="text-base leading-relaxed">
+                            One of the most fascinating aspects of Bahamut's mythology is his court, which includes
+                            seven ancient gold dragons known as the Seven Golden Wyrms. These dragons serve as his
+                            emissaries, advisors, and defenders, each embodying different aspects of his divine
+                            will. Together, they form a powerful force for good, assisting Bahamut in his ongoing
+                            battle against malevolent forces.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">Bahamut and Tiamat</h5>
+                        <p class="text-base leading-relaxed">
+                            Bahamut's lore is deeply intertwined with that of Tiamat, the five-headed dragon goddess
+                            of evil. The two are eternal rivals, representing the dichotomy of good and evil within
+                            the draconic pantheon. Their conflicts are legendary, often serving as the backdrop for
+                            epic battles and adventures in the D&D universe.
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-fit ">
+                        <img class="rounded-3xl drop-shadow-2xl" src="../src/images/bahamut-banner(3).svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">Conclusion</h3>
+                        <p class="text-base leading-relaxed">
+                            Bahamut, the Platinum Dragon, is more than just a figure in Dungeons & Dragons lore; he
+                            is a symbol of hope, justice, and the unwavering fight against darkness. For adventurers
+                            who seek to embody the highest ideals of honor and righteousness, Bahamut stands as an
+                            eternal inspiration. Whether as a divine patron or a legendary figure in a campaign, his
+                            presence adds a layer of depth and nobility to the ever-expanding tapestry of D&D.
+                        </p>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="bahamut-modal" type="button"
+                        class="text-box bg-button hover:bg-button_hover font-medium rounded-lg text-sm px-5 py-2.5 text-center">Back
+                        To Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! Bahamut-Modal Section End -->
+
+    <!--! Bard-Modal Section Start -->
+    <div id="bard-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-auto fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-box rounded-3xl drop-shadow-2xl">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                    <h3 class="text-xl font-semibold text-text_primary">
+                        Bards in Dungeons & Dragons: The Enchanting Jack-of-All-Trades
+                    </h3>
+                    <button type="button"
+                        class="text-box bg-button hover:bg-button_hover  rounded-full text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                        data-modal-hide="bard-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="overflow-auto h-[750px]">
+                    <div class="px-4 w-full h-fit ">
+                        <img class="rounded-3xl mx-auto overflow-hidden drop-shadow-2xl"
+                            src="../src/images/bard-banner.svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h2 class="leading-relaxed font-bold">
+                            Bards in Dungeons & Dragons: The Enchanting Jack-of-All-Trades
+                        </h2>
+                        <p class="text-base leading-relaxed">
+                            In the world of Dungeons & Dragons (D&D), bards stand out as versatile and charismatic
+                            performers who weave magic through their music and storytelling. Combining elements of
+                            spellcasting, combat, and social prowess, bards are the quintessential
+                            jack-of-all-trades, capable of adapting to any situation with flair and creativity.
+                        </p>
+                        <h4 class="leading-relaxed font-bold">The Path of the Bard</h4>
+                        <p class="text-base leading-relaxed">
+                            Bards draw their power from the magical essence of music and words. They are often
+                            wanderers and adventurers who have traveled far and wide, collecting tales, songs, and
+                            arcane secrets. This wealth of knowledge allows them to inspire allies, deceive enemies,
+                            and cast spells with a unique blend of artistry and magic. Their charm and versatility
+                            make them invaluable members of any adventuring party.
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-[350px]">
+                        <img class="rounded-3xl h-full mx-auto overflow-hidden drop-shadow-lg"
+                            src="../src/images/bard-banner(1).svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">Signature Abilities</h3>
+                        <h4 class="leading-relaxed font-bold">Bardic Inspiration</h4>
+                        <p class="text-base leading-relaxed">
+                            One of the bard’s most defining abilities is Bardic Inspiration. By playing a tune,
+                            reciting a poem, or delivering an encouraging word, bards can grant their allies an
+                            Inspiration die, which can be added to attack rolls, saving throws, or ability checks.
+                            This ability to bolster their companions' efforts can turn the tide of battle or ensure
+                            the success of crucial skill checks.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">Spellcasting Versatility</h5>
+                        <p class="text-base leading-relaxed">
+                            Bards are proficient spellcasters with access to a wide variety of spells from different
+                            schools of magic. They can heal wounds, create illusions, charm foes, and even
+                            counteract other spells. This broad spell selection makes them incredibly adaptable,
+                            able to support their party in numerous ways, whether through healing, crowd control, or
+                            utility spells.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">Skills and Expertise</h5>
+                        <p class="text-base leading-relaxed">
+                            Bards excel in a wide array of skills, thanks to their background as performers and
+                            storytellers. They gain proficiency in multiple skills and can choose Expertise in
+                            several, allowing them to double their proficiency bonus. This makes bards adept at
+                            everything from persuasion and deception to acrobatics and sleight of hand, enabling
+                            them to navigate social encounters and physical challenges with equal ease.
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-fit flex_center space-x-1 ">
+                        <img class="rounded-3xl w-1/2 drop-shadow-2xl" src="../src/images/bard-banner(2).svg"
+                            alt="">
+                        <img class="rounded-3xl w-1/2 drop-shadow-2xl" src="../src/images/bard-banner(3).svg"
+                            alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <ul class="list-disc">
+                            <li class="list-none leading-relaxed font-bold">
+                                <h5>Bardic Colleges</h5>
+                            </li>
+                            <li class="list-none">
+                                <p class="text-base leading-relaxed">At the third level, bards choose a Bardic
+                                    College, which further defines their role and abilities. Some popular colleges
+                                    include:</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">College of Lore:</span>
+                                    These bards are true masters of knowledge and storytelling. They gain additional
+                                    proficiencies and can use Cutting Words to hinder their enemies' actions.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">College of
+                                        Valor:</span> Valor bards are brave warriors and inspiring leaders. They can
+                                    wear medium armor, wield martial weapons, and inspire their allies to greater
+                                    feats of bravery in combat.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">College of
+                                        Glamour:</span> Glamour bards use their enchanting presence to captivate and
+                                    command. They can enthrall audiences and grant temporary hit points and movement
+                                    boosts to allies.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">College of
+                                        Swords:</span> Swords bards combine their musical talents with martial
+                                    prowess. They are skilled in the use of blades and can perform impressive combat
+                                    maneuvers.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">The Role of the Bard in a Party</h3>
+                        <p class="text-base leading-relaxed">
+                            Bards often serve as the heart and soul of an adventuring party. Their ability to
+                            inspire and support their allies, combined with their extensive skillset and
+                            spellcasting, makes them incredibly versatile. Whether they are negotiating with NPCs,
+                            providing crucial healing, or delivering devastating spells in combat, bards excel in
+                            roles that require adaptability and creativity. Their charm and wit also make them
+                            natural leaders and mediators, often guiding their party through social and political
+                            intrigue.
+                        </p>
+                        <h3 class="leading-relaxed font-bold">Conclusion</h3>
+                        <p class="text-base leading-relaxed">
+                            Bards in D&D bring a unique blend of magic, music, and versatility to the game. Their
+                            ability to inspire allies, outwit enemies, and adapt to any situation makes them
+                            indispensable adventurers. Whether performing on stage or in the heat of battle, bards
+                            enchant and captivate, ensuring that every adventure is as memorable as it is magical.
+                            With their boundless creativity and charm, bards add a touch of artistry and wonder to
+                            the world of Dungeons & Dragons.
+                        </p>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="bard-modal" type="button"
+                        class="text-box bg-button hover:bg-button_hover font-medium rounded-lg text-sm px-5 py-2.5 text-center">Back
+                        To Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! Bard-Modal Section End -->
+
+    <!--! Delve-Modal Section Start -->
+    <div id="delve-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-auto fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-box rounded-3xl drop-shadow-2xl">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                    <h3 class="text-xl font-semibold text-text_primary">
+                        Exploring D&D Lore: A Gateway to Infinite Adventures
+                    </h3>
+                    <button type="button"
+                        class="text-box bg-button hover:bg-button_hover  rounded-full text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                        data-modal-hide="delve-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="overflow-auto h-[750px]">
+                    <div class="px-4 w-full h-fit ">
+                        <img class="rounded-3xl mx-auto overflow-hidden drop-shadow-2xl"
+                            src="../src/images/delveinto-banner.svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h2 class="leading-relaxed font-bold">
+                            Exploring D&D Lore: A Gateway to Infinite Adventures
+                        </h2>
+                        <p class="text-base leading-relaxed">
+                            Dungeons & Dragons (D&D) offers more than just a game; it provides a vast and intricate
+                            universe brimming with stories, characters, and settings that captivate the imagination.
+                            Diving into the lore of D&D is like opening a book of endless adventures, where each
+                            page reveals a new tale of heroism, magic, and mystery.
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-[350px] flex_center space-x-1">
+                        <img class=" w-full rounded-3xl h-full mx-auto overflow-hidden drop-shadow-lg"
+                            src="../src/images/delveinto-banner(1).svg" alt="">
+
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">The Magic of Forgotten Realms</h3>
+                        <p class="text-base leading-relaxed">
+                            The Forgotten Realms is one of D&D’s most beloved settings, known for its depth and
+                            diversity. From the bustling streets of Waterdeep to the untamed wilderness of the Spine
+                            of the World, this world is filled with vibrant cultures, legendary figures, and ancient
+                            secrets waiting to be uncovered. Players can embark on quests to explore hidden ruins,
+                            battle formidable monsters, or delve into the political intrigues of powerful cities.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">The Epic Sagas of Dragonlance</h5>
+                        <p class="text-base leading-relaxed">
+                            Dragonlance brings to life a world where epic sagas unfold against the backdrop of an
+                            ongoing struggle between good and evil. The land of Krynn is rich with history and
+                            drama, featuring iconic characters like the heroic Tanis Half-Elven and the enigmatic
+                            mage Raistlin Majere. The setting’s hallmark is its epic storytelling, where grand
+                            battles and personal journeys intertwine to create unforgettable campaigns.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">The Innovative World of Eberron</h5>
+                        <p class="text-base leading-relaxed">
+                            Eberron stands out with its unique fusion of magic and technology, presenting a world
+                            where fantastical inventions are part of everyday life. The setting is characterized by
+                            its noir-inspired intrigue, where players might find themselves investigating mysteries
+                            in the towering city of Sharn or exploring the war-torn lands of the Mournland.
+                            Eberron’s distinct atmosphere offers a fresh and exciting twist on traditional fantasy.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">Creating Your Own Lore</h5>
+                        <p class="text-base leading-relaxed">
+                            One of the most thrilling aspects of D&D is the freedom it gives players and Dungeon
+                            Masters to create their own worlds and stories. Homebrew campaigns allow for
+                            unparalleled creativity, letting DMs craft unique settings complete with their own
+                            histories, cultures, and conflicts. This personalized storytelling ensures that every
+                            campaign is a unique experience tailored to the interests and imaginations of the
+                            players.
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-fit ">
+                        <img class="rounded-3xl drop-shadow-2xl" src="../src/images/delveinto-banner(2).svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">Conclusion</h3>
+                        <p class="text-base leading-relaxed">
+                            Exploring the lore of D&D opens the door to a universe filled with endless
+                            possibilities. Whether delving into the established settings of the Forgotten Realms,
+                            Dragonlance, and Eberron, or creating your own homebrew world, the lore provides a rich
+                            foundation for adventure. Each journey through this fantastical universe is a chance to
+                            discover new stories, build lasting memories, and become part of a legacy that has
+                            inspired countless adventurers for decades. So gather your dice, summon your party, and
+                            set forth into the boundless realms of Dungeons & Dragons lore.
+                        </p>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="delve-modal" type="button"
+                        class="text-box bg-button hover:bg-button_hover font-medium rounded-lg text-sm px-5 py-2.5 text-center">Back
+                        To Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! Delve-Modal Section End -->
+
+    <!--! Barbarian-Modal Section Start -->
+    <div id="barbarian-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-auto fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-box rounded-3xl drop-shadow-2xl">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                    <h3 class="text-xl font-semibold text-text_primary">
+                        Barbarians in Dungeons & Dragons: The Ferocious Warriors
+                    </h3>
+                    <button type="button"
+                        class="text-box bg-button hover:bg-button_hover  rounded-full text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                        data-modal-hide="barbarian-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="overflow-auto h-[750px]">
+                    <div class="px-4 w-full h-fit ">
+                        <img class="rounded-3xl mx-auto overflow-hidden drop-shadow-2xl"
+                            src="../src/images/barbarian-banner.svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h2 class="leading-relaxed font-bold">
+                            Barbarians in Dungeons & Dragons: The Ferocious Warriors
+                        </h2>
+                        <p class="text-base leading-relaxed">
+                            In the world of Dungeons & Dragons (D&D), barbarians stand out as the embodiment of raw
+                            power and primal rage. These fierce warriors draw their strength from a deep, inner
+                            wellspring of fury, allowing them to unleash devastating attacks and shrug off damage
+                            that would fell lesser beings. With their unmatched resilience and ferocity, barbarians
+                            are a force to be reckoned with on the battlefield.
+                        </p>
+                        <h4 class="leading-relaxed font-bold">The Path of the Barbarian</h4>
+                        <p class="text-base leading-relaxed">
+                            Barbarians are characterized by their physical prowess and indomitable will. Unlike
+                            other classes that rely on spells or intricate combat techniques, barbarians harness
+                            their primal instincts to fuel their combat abilities. This connection to their primal
+                            nature often ties them to the untamed wilderness, where they live by their own rules and
+                            thrive in the harshest environments.
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-[350px]">
+                        <img class="rounded-3xl h-full mx-auto overflow-hidden drop-shadow-lg"
+                            src="../src/images/barbarian-banner(3).svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">Signature Abilities</h3>
+                        <h4 class="leading-relaxed font-bold">Rage</h4>
+                        <p class="text-base leading-relaxed">
+                            The cornerstone of a barbarian’s power is their ability to enter a state of Rage. When
+                            raging, barbarians gain several benefits: they deal extra damage with melee weapons,
+                            have advantage on Strength checks and saving throws, and gain resistance to bludgeoning,
+                            piercing, and slashing damage. This transformation into a berserk warrior makes them
+                            nearly unstoppable in close combat, allowing them to endure and dish out tremendous
+                            amounts of damage.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">Unarmored Defense</h5>
+                        <p class="text-base leading-relaxed">
+                            Barbarians have an exceptional ability to protect themselves even without traditional
+                            armor. Their Unarmored Defense allows them to add their Constitution modifier to their
+                            Armor Class (AC) when not wearing armor, reflecting their extraordinary toughness and
+                            agility. This makes barbarians highly resilient and difficult to hit, even when lightly
+                            equipped.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">Reckless Attack</h5>
+                        <p class="text-base leading-relaxed">
+                            Reckless Attack is another powerful feature that exemplifies the barbarian’s aggressive
+                            combat style. By attacking recklessly, barbarians gain advantage on melee weapon attack
+                            rolls during their turn, but in return, attack rolls against them have advantage until
+                            their next turn. This high-risk, high-reward tactic underscores their fearless nature
+                            and relentless pursuit of victory.
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-fit flex_center space-x-1 ">
+                        <img class="rounded-3xl w-1/2 drop-shadow-2xl" src="../src/images/barbarian-banner(2).svg"
+                            alt="">
+                        <img class="rounded-3xl w-1/2 drop-shadow-2xl" src="../src/images/barbarian-banner(1).svg"
+                            alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <ul class="list-disc">
+                            <li class="list-none leading-relaxed font-bold">
+                                <h5>Primal Paths</h5>
+                            </li>
+                            <li class="list-none">
+                                <p class="text-base leading-relaxed">At the third level, barbarians choose a Primal
+                                    Path, which further enhances their abilities and defines their combat style.
+                                    Some popular paths include:</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Path of the
+                                        Berserker:</span> Berserkers embrace their rage to its fullest, gaining
+                                    abilities that allow them to continue fighting even when grievously injured and
+                                    to unleash frenzied attacks that overwhelm their foes.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Path of the Totem
+                                        Warrior:</span> Totem Warriors draw power from spiritual animal totems,
+                                    gaining abilities that enhance their physical prowess, resilience, and
+                                    connection to nature. Each totem animal offers unique benefits, such as the
+                                    bear’s toughness or the eagle’s mobility.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Path of the Ancestral
+                                        Guardian:</span> Ancestral Guardians call upon the spirits of their
+                                    ancestors to protect their allies and hinder their enemies. These spirits
+                                    provide guidance, protection, and powerful support in battle.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Path of the Storm
+                                        Herald:</span> Storm Heralds channel the fury of the elements, gaining
+                                    abilities tied to different environmental conditions like deserts, tundras, or
+                                    seas. These elemental auras enhance their combat abilities and offer unique
+                                    tactical options.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">The Role of the Barbarian in a Party</h3>
+                        <p class="text-base leading-relaxed">
+                            In an adventuring party, barbarians typically serve as frontline fighters and tanks.
+                            Their high hit points, damage resistance, and powerful melee attacks make them ideal for
+                            absorbing damage and dealing with enemies up close. Their fearsome presence on the
+                            battlefield can also serve to intimidate foes and protect their allies. Outside of
+                            combat, barbarians' keen survival skills and physical abilities make them excellent
+                            explorers and trackers.
+                        </p>
+                        <h3 class="leading-relaxed font-bold">Conclusion</h3>
+                        <p class="text-base leading-relaxed">
+                            Barbarians in D&D are the ultimate expression of raw, unbridled power and primal
+                            instinct. Their ability to channel their rage into devastating combat prowess and their
+                            unparalleled resilience make them formidable warriors. Whether facing down hordes of
+                            enemies or surviving the harshest wilderness, barbarians thrive where others falter.
+                            Their ferocity and indomitable spirit ensure that every adventure is filled with
+                            thrilling battles and heroic feats. With their primal strength and untamed fury,
+                            barbarians add an exhilarating edge to the world of Dungeons & Dragons.
+                        </p>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="barbarian-modal" type="button"
+                        class="text-box bg-button hover:bg-button_hover font-medium rounded-lg text-sm px-5 py-2.5 text-center">Back
+                        To Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! Barbarian-Modal Section End -->
+
+    <!--! Wizard-Modal Section Start -->
+    <div id="wizard-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-auto fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-box rounded-3xl drop-shadow-2xl">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                    <h3 class="text-xl font-semibold text-text_primary">
+                        Wizards in Dungeons & Dragons: Masters of Arcane Power
+                    </h3>
+                    <button type="button"
+                        class="text-box bg-button hover:bg-button_hover  rounded-full text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                        data-modal-hide="wizard-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="overflow-auto h-[750px]">
+                    <div class="px-4 w-full h-fit ">
+                        <img class="rounded-3xl mx-auto overflow-hidden drop-shadow-2xl"
+                            src="../src/images/wizard-banner.svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h2 class="leading-relaxed font-bold">
+                            Wizards in Dungeons & Dragons: Masters of Arcane Power
+                        </h2>
+                        <p class="text-base leading-relaxed">
+                            Wizards in Dungeons & Dragons (D&D) are among the most iconic and powerful characters in
+                            the game, wielding arcane magic that can shape the very fabric of reality. With their
+                            extensive knowledge of spells and deep understanding of magical theory, wizards bring a
+                            unique and strategic element to any adventuring party.
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-[350px]">
+                        <img class=" rounded-3xl h-full mx-auto overflow-hidden drop-shadow-lg"
+                            src="../src/images/wizard-banner(1).svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">The Path of the Wizard</h3>
+                        <p class="text-base leading-relaxed">
+                            Wizards are defined by their pursuit of knowledge and mastery over magic. Unlike
+                            sorcerers, who are born with innate magical abilities, wizards gain their power through
+                            rigorous study and practice. They spend years poring over ancient tomes, deciphering
+                            runes, and mastering the complexities of spellcasting. This dedication to learning
+                            allows them to prepare and cast a wide array of spells, tailored to suit the needs of
+                            their adventures.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">Spellcasting and Versatility</h5>
+                        <p class="text-base leading-relaxed">
+                            One of the wizard’s greatest strengths is their versatility. With access to a vast
+                            spellbook, wizards can prepare a diverse range of spells each day, adapting to any
+                            situation they might encounter. From devastating fireballs and mind-bending illusions to
+                            protective wards and powerful divinations, wizards have a spell for every occasion. This
+                            flexibility makes them invaluable members of any party, capable of solving problems that
+                            brute force or stealth alone cannot.
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-fit flex_center space-x-1 ">
+                        <img class="w-1/2 rounded-3xl drop-shadow-2xl" src="../src/images/wizard-banner(2).svg"
+                            alt="">
+                        <img class="w-1/2 rounded-3xl drop-shadow-2xl" src="../src/images/wizard-banner(3).svg"
+                            alt="">
+
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <ul class="list-disc">
+                            <li class="list-none leading-relaxed font-bold">
+                                <h5>Schools of Magic</h5>
+                            </li>
+                            <li class="list-none">
+                                <p class="text-base leading-relaxed">Wizards can specialize in different schools of
+                                    magic, each offering unique abilities and spells. These schools include:</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Abjuration:</span>
+                                    Masters of protective magic, abjurers excel at warding off harm and banishing
+                                    otherworldly threats.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Conjuration:</span>
+                                    Conjurers can summon creatures and create objects out of thin air, providing
+                                    versatile solutions in combat and exploration.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Divination:</span>
+                                    Diviners possess unparalleled foresight, using their magic to uncover secrets
+                                    and predict future events.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Enchantment:</span>
+                                    Enchanters wield spells that influence minds, allowing them to charm,
+                                    manipulate, and control others</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Evocation:</span>
+                                    Evokers specialize in raw, destructive power, casting spells that unleash
+                                    elemental fury upon their foes.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Illusion:</span>
+                                    Illusionists craft intricate illusions to deceive the senses, creating phantasms
+                                    that can bewilder and mislead.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Necromancy:</span>
+                                    Necromancers command the powers of life and death, animating the dead and
+                                    draining the vitality of the living.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Transmutation:</span>
+                                    Transmuters manipulate matter and energy, transforming objects and creatures to
+                                    suit their needs.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="px-4 w-full h-fit">
+                        <img class=" rounded-3xl h-full mx-auto overflow-hidden drop-shadow-lg"
+                            src="../src/images/wizard-banner(4).svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">The Role of the Wizard in a Party</h3>
+                        <p class="text-base leading-relaxed">
+                            In an adventuring party, wizards often serve as the strategists and problem-solvers.
+                            Their vast repertoire of spells allows them to address a wide variety of challenges,
+                            whether it’s disarming magical traps, providing crucial information through divination,
+                            or turning the tide of battle with a well-placed fireball. While physically weaker than
+                            other classes, their magical prowess more than compensates, making them a formidable
+                            force on the battlefield and invaluable allies in any quest.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">Conclusion</h5>
+                        <p class="text-base leading-relaxed">
+                            Wizards in D&D epitomize the pursuit of knowledge and the power of the mind. Their
+                            dedication to mastering the arcane arts and their ability to adapt to any situation make
+                            them essential members of any adventuring party. Whether delving into ancient ruins,
+                            battling fierce monsters, or unraveling complex mysteries, wizards bring a level of
+                            depth, strategy, and wonder that enriches the D&D experience for all players.
+                        </p>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="wizard-modal" type="button"
+                        class="text-box bg-button hover:bg-button_hover font-medium rounded-lg text-sm px-5 py-2.5 text-center">Back
+                        To Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! Wizard-Modal Section End -->
+
+    <!--! Cleric-Modal Section Start -->
+    <div id="cleric-modal" tabindex="-1" aria-hidden="true"
+        class="hidden overflow-auto fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+        <div class="relative p-4 w-full max-w-2xl max-h-full">
+            <!-- Modal content -->
+            <div class="relative bg-box rounded-3xl drop-shadow-2xl">
+                <!-- Modal header -->
+                <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t">
+                    <h3 class="text-xl font-semibold text-text_primary">
+                        Clerics in Dungeons & Dragons: Divine Champions and Healers
+                    </h3>
+                    <button type="button"
+                        class="text-box bg-button hover:bg-button_hover  rounded-full text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                        data-modal-hide="cleric-modal">
+                        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                        </svg>
+                        <span class="sr-only">Close modal</span>
+                    </button>
+                </div>
+                <!-- Modal body -->
+                <div class="overflow-auto h-[750px]">
+                    <div class="px-4 w-full h-fit ">
+                        <img class="rounded-3xl mx-auto overflow-hidden drop-shadow-2xl"
+                            src="../src/images/cleric-banner.svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h2 class="leading-relaxed font-bold">
+                            Clerics in Dungeons & Dragons: Divine Champions and Healers
+                        </h2>
+                        <p class="text-base leading-relaxed">
+                            Clerics in Dungeons & Dragons (D&D) are revered as the holy warriors and healers of the
+                            game, channeling divine power bestowed upon them by their deities. With their unique
+                            blend of spellcasting, combat prowess, and spiritual guidance, clerics are indispensable
+                            members of any adventuring party, providing both support and strength in times of need.
+                        </p>
+                        <h4 class="leading-relaxed font-bold">The Path of the Cleric</h4>
+                        <p class="text-base leading-relaxed">
+                            Clerics are chosen by the gods they serve, drawing their power from their unwavering
+                            faith and devotion. Unlike wizards who rely on arcane knowledge or sorcerers who possess
+                            innate magic, clerics receive their abilities directly from their divine patrons. This
+                            connection to the divine enables them to perform miracles, from healing the wounded and
+                            curing diseases to banishing undead and invoking divine wrath upon their enemies.
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-[350px]">
+                        <img class="rounded-3xl h-full mx-auto overflow-hidden drop-shadow-lg"
+                            src="../src/images/cleric-banner(3).svg" alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">Signature Abilities</h3>
+                        <h4 class="leading-relaxed font-bold">Spellcasting</h4>
+                        <p class="text-base leading-relaxed">
+                            Clerics are potent spellcasters, with access to a wide range of divine spells that can
+                            heal, protect, and empower their allies, as well as smite their foes. They prepare their
+                            spells daily, choosing from the entire cleric spell list, which allows them to adapt to
+                            the needs of their party. This versatility ensures that they are always ready to face
+                            any challenge, whether it requires powerful healing, protective wards, or offensive
+                            spells.
+                        </p>
+                        <h5 class="leading-relaxed font-bold">Channel Divinity</h5>
+                        <p class="text-base leading-relaxed">
+                            Channel Divinity is a unique feature that allows clerics to perform extraordinary feats
+                            of divine power. Each cleric has access to Turn Undead, which forces undead creatures to
+                            flee or be destroyed. Additionally, their chosen Divine Domain grants them specific
+                            Channel Divinity options, such as healing allies, dealing extra damage to enemies, or
+                            providing powerful buffs.
+                        </p>
+                    </div>
+                    <div class="px-4 w-full h-fit flex_center space-x-1 ">
+                        <img class="rounded-3xl w-1/2 drop-shadow-2xl" src="../src/images/cleric-banner(2).svg"
+                            alt="">
+                        <img class="rounded-3xl w-1/2 drop-shadow-2xl" src="../src/images/cleric-banner(4).svg"
+                            alt="">
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <ul class="list-disc">
+                            <li class="list-none leading-relaxed font-bold">
+                                <h5>Divine Domains</h5>
+                            </li>
+                            <li class="list-none">
+                                <p class="text-base leading-relaxed">At the first level, clerics choose a Divine
+                                    Domain, which reflects the primary focus of their deity and grants them
+                                    additional abilities and spells. Some popular Divine Domains include:</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Life Domain:</span>
+                                    Life clerics are unparalleled healers, specializing in restorative magic and
+                                    protection. They can heal more effectively and protect their allies with
+                                    powerful blessings.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Light Domain:</span>
+                                    Light clerics wield the power of fire and sunlight, excelling in combat against
+                                    undead and creatures of darkness. They can unleash radiant damage and blind
+                                    their enemies.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">War Domain:</span> War
+                                    clerics are fierce warriors, combining martial prowess with divine magic. They
+                                    receive bonuses to their weapon attacks and can inspire their allies in battle.
+                                </p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Tempest Domain:</span>
+                                    Tempest clerics harness the power of storms, using thunder and lightning to
+                                    devastate their foes. They can control the weather and call down destructive
+                                    storms.</p>
+                            </li>
+                            <li class="ml-10">
+                                <p class="text-base leading-relaxed"><span class="font-bold">Trickery Domain:</span>
+                                    Trickery clerics are cunning and deceptive, using illusion and stealth to outwit
+                                    their enemies. They can create duplicates of themselves and turn invisible.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-4 md:p-5 space-y-4">
+                        <h3 class="leading-relaxed font-bold">The Role of the Cleric in a Party</h3>
+                        <p class="text-base leading-relaxed">
+                            Clerics often serve as the backbone of an adventuring party, providing essential healing
+                            and support that keep their allies alive and fighting. Their ability to restore hit
+                            points, remove curses, and provide divine protection is crucial in many encounters.
+                            Additionally, their combat abilities and divine spells make them formidable opponents in
+                            battle. Outside of combat, clerics’ knowledge of religion and their connection to the
+                            divine can help guide their party through moral and ethical dilemmas
+                        </p>
+                        <h3 class="leading-relaxed font-bold">Conclusion</h3>
+                        <p class="text-base leading-relaxed">
+                            Clerics in D&D are the epitome of divine power and dedication. Their unique combination
+                            of healing, support, and combat abilities makes them indispensable to any adventuring
+                            party. Whether calling down the wrath of their gods upon their enemies, healing the
+                            gravest of wounds, or guiding their companions with wisdom and faith, clerics bring a
+                            sense of hope and divine purpose to every adventure. With their unwavering devotion and
+                            miraculous abilities, clerics add a profound and spiritual dimension to the world of
+                            Dungeons & Dragons.
+                        </p>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                    <button data-modal-hide="cleric-modal" type="button"
+                        class="text-box bg-button hover:bg-button_hover font-medium rounded-lg text-sm px-5 py-2.5 text-center">Back
+                        To Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! Cleric-Modal Section End -->
+</body>
+<script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+<script src="../js/app.js"></script>
+
+</html>
